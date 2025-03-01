@@ -1,0 +1,46 @@
+     body {
+            margin: 0;
+            overflow: hidden;
+            background: black;
+            font-family: 'Arial', sans-serif;
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #8B0000;
+        }
+
+        h1 {
+            font-size: 60px;
+            text-shadow: 0 0 30px rgba(139,0,0,1);
+            animation: glowText 3s infinite alternate;
+            cursor: pointer;
+        }
+
+        p {
+            font-size: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+            text-shadow: 0 0 15px rgba(139,0,0,0.8);
+            cursor: pointer;
+        }
+
+        @keyframes glowText {
+            0% { text-shadow: 0 0 15px rgba(139,0,0,0.8); }
+            100% { text-shadow: 0 0 40px rgba(139,0,0,1); }
+        }
+
+        .fade-out {
+            opacity: 0;
+            transition: opacity 1s ease-out;
+        }
